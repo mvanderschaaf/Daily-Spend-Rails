@@ -1,0 +1,15 @@
+<h1>Create Frequency</h1>
+
+<%= form_for(@frequency) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :times_per_year, "Times per year" %><br/>
+    <%= f.text_field :times_per_year %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create" %>
+  </div>
+<% end %>

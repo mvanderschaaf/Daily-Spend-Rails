@@ -1,0 +1,20 @@
+<h2>Frequencies</h2>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Times per year</td>
+  </tr>
+  <% @Frequencies.each do |f| %>
+    <tr>
+      <td>
+        <%= f.name %>
+      </td>
+      <td>
+        <%= f.times_per_year %>
+      </td>
+    </tr>
+  <% end %>
+</table> 
+
+<%= link_to "New frequency", new_frequency_path %>
