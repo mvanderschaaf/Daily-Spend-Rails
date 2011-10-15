@@ -18,7 +18,7 @@
       <td><%= link_to 'paid', paid_bill_path(b) %></td>
       <td><%= link_to 'edit', edit_bill_path(b) %></td>
       <td><%= link_to "delete", b, :method => :delete, :confirm => "You sure?",
-                                   :title => "Delete #{b.name}" %>
+                                   :title => "Delete #{b.name}" %></td>
     </tr>
   <% end %>
  </table>

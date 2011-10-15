@@ -31,4 +31,9 @@ class GoalsController < ApplicationController
       render 'edit'
     end
   end
+
+  def destroy
+    Goal.find(params[:id]).destroy
+    redirect_to :action => 'index'
+  end
 end
