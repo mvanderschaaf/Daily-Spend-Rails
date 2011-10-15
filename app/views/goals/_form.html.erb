@@ -1,0 +1,17 @@
+<%= form_for @goal do |f| %>
+  <div class="field">
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br/>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :target_date %><br/>
+    <%= f.text_field :target_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

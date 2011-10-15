@@ -1,6 +1,7 @@
 Dailyspend::Application.routes.draw do
   resources :frequencies
   resources :bills
+  resources :goals
 
   match 'bills/paid/:id' => 'bills#paid', :as => :paid_bill
   # The priority is based upon order of creation:

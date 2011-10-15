@@ -1,0 +1,22 @@
+<h1>Goals</h1>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Amount</td>
+    <td>Saved</td>
+    <td>Target date</td>
+    <td></td>
+  </tr>
+  <% @goals.each do |goal| %>
+    <tr>
+      <td><%= goal.name %></td>
+      <td><%= goal.amount %></td>
+      <td><%= goal.saved %></td>
+      <td><%= goal.target_date %></td>
+      <td><%= link_to 'edit', edit_goal_path(goal) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "New Goal", new_goal_path %> 
