@@ -1,0 +1,16 @@
+<%= form_for @bill do |f| %>
+  <div class="field">
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br/>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= collection_select(:bill, :frequency_id, @freqs, :id, :name, {:prompt => true}) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

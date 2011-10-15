@@ -10,11 +10,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111010091709) do
+ActiveRecord::Schema.define(:version => 20111015132518) do
+
+  create_table "bills", :force => true do |t|
+    t.string   "name"
+    t.integer  "amount"
+    t.integer  "frequency_id"
+    t.date     "last_paid_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "frequencies", :force => true do |t|
     t.string   "name"
     t.integer  "times_per_year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "goals", :force => true do |t|
+    t.string   "name"
+    t.integer  "amount"
+    t.integer  "saved"
+    t.date     "target_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

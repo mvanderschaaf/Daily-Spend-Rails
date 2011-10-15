@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  amount: 1
+  saved: 1
+  target_date: 2011-10-15
+
+two:
+  name: MyString
+  amount: 1
+  saved: 1
+  target_date: 2011-10-15

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  amount: 1
+  frequency_id: 1
+  last_paid_date: 2011-10-10
+
+two:
+  name: MyString
+  amount: 1
+  frequency_id: 1
+  last_paid_date: 2011-10-10

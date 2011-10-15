@@ -1,0 +1,26 @@
+<h1>Bills</h1>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Amount</td>
+    <td>Frequency</td>
+    <td>Last paid</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <% @bills.each do |b| %>
+    <tr>
+      <td><%= b.name %></td>
+      <td><%= b.amount %></td>
+      <td><%= b.frequency.name %></td>
+      <td><%= b.last_paid_date %></td>
+      <td><%= link_to 'paid', paid_bill_path(b) %></td>
+      <td><%= link_to 'edit', edit_bill_path(b) %></td>
+      <td><%= link_to "delete", b, :method => :delete, :confirm => "You sure?",
+                                   :title => "Delete #{b.name}" %>
+    </tr>
+  <% end %>
+ </table>
+
+ <%= link_to "New Bill", new_bill_path %>
