@@ -1,0 +1,15 @@
+<h1>Daily cost</h1>
+
+<ul>
+<% @billCosts.each do |c| %>
+  <li><%= c %></li>
+<% end %>
+</ul>
+
+<ul>
+  <% @goalCosts.each do |gc| %>
+    <li><%= gc %></li>
+  <% end %>
+</ul>
+
+Total: <%= @totalCost %>

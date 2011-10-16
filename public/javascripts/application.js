@@ -2,5 +2,5 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 $(function() {
-  $("#goal_target_date").datepicker();
+  $("#goal_target_date").datepicker({dateFormat: 'dd/mm/yy'});
 });

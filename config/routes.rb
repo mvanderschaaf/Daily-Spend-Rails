@@ -4,6 +4,7 @@ Dailyspend::Application.routes.draw do
   resources :goals
 
   match 'bills/paid/:id' => 'bills#paid', :as => :paid_bill
+  match '/' => 'home#dailycost'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
